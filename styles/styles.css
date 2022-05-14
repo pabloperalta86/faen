@@ -18,7 +18,9 @@
 
 .encabezado{
     grid-area: encabezado;
-    background-color:#17678e;
+    /*background-color:#17678e;*/
+    background: rgb(0,113,255);
+    background: linear-gradient(90deg, rgba(0,113,255,1) 8%, rgba(3,12,95,0.9895308465182948) 100%);
     height: 60px;
     position:fixed;
     width: 100%;
