@@ -106,6 +106,14 @@ nav ul li a{
     border-radius: 10px 10px;
 }
 
+.imagenPrincipal{
+    transition: transform 1s;
+}
+
+.imagenPrincipal:hover {
+    transform: scale(.95); 
+}
+
 .pDivIndex001{
     display: flex;
     width: 40%;
