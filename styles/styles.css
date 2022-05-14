@@ -1,0 +1,957 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    box-sizing: border-box;
+}
+
+.bodyIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.encabezado{
+    grid-area: encabezado;
+    background-color:#17678e;
+    height: 60px;
+    position:fixed;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    z-index: 100;
+}
+
+.navPrincipal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoEncabezado{
+    display: flex;
+    top: 0;
+    width: 60px;
+    margin: 0px 25px;
+}
+
+.menuEncabezado{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    padding-left: 5px;
+    margin: 0px 15px;
+    width: max-content;
+}
+
+nav ul li a:hover {
+    color: rgb(184, 184, 187);
+    transition: 0.6s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+.bannerIndex{
+    width: 100%;
+    height: 350px;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+}
+
+@keyframes banner{
+    0%,30%{
+        background-image: url(../images/banner_index_001.png);
+        opacity: 1;
+    }
+    31%,35%{
+        opacity: 0.75;
+    }
+    35%,65%{
+        background-image: url(../images/banner_index_002.png);
+        opacity: 1;
+    }
+    66%,70%{
+        opacity: 0.75;
+    }
+    71%,100%{
+        background-image: url(../images/banner_index_003.png);
+        opacity: 1;
+    }    
+}
+
+.divIndex001{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.imagenPrincipal img{
+    display: flex;
+    margin: 30px;
+    width: 450px;
+    border-radius: 10px 10px;
+}
+
+.pDivIndex001{
+    display: flex;
+    width: 40%;
+}
+
+main{
+    margin-top: 60px;
+    background-color: rgb(213, 212, 210);
+    grid-area: main;
+}
+
+.seccionPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#h1Index{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: #302a7d;
+}
+
+.seccionPrincipal h2,h3{
+    font-size: 25px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    color: #302a7d;
+}
+
+.seccionPrincipal h2,h3{
+    text-align: center;    
+}
+
+.seccionVideo{
+    text-align:center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.seccionVideo h3{
+    padding-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:#17678e;
+    width: 100%;
+    height: 50px;
+    grid-area: footer;
+    color: white;
+}
+
+.divFooter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.footer4{
+    margin: 10px;
+    font-size: 14px !important;
+    font-style: normal !important;
+}
+
+.footerLogo{
+    display: flex;
+    width: 50px;
+}
+
+.divPrioridades{
+    margin-top: 15px;
+}
+
+main{
+    min-height: 100vh;
+}
+
+/*aca empieza nosotros*/
+
+.bannerNosotros img{
+    width: 100%;
+}
+
+.bodyNosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.empleados{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.empleado{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 16px 32px;
+    margin: 16px;
+    background-color: #E1E1E1;
+    border-radius: 15px;
+}
+
+.empleado h3{
+    text-align: center;
+    margin-bottom: 5px;
+    color: rgb(92, 89, 89);
+}
+
+.empleado h4{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(144, 144, 144);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.empleado p{
+    text-align: center;
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin: auto auto; 
+}
+
+.quienesSomos p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mainNosotros h1, h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #302a7d;
+}
+
+/*aca empieza servicios*/
+
+.bodyServicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.bannerServicios img{
+    width: 100%;
+}
+
+.nuestrosServicios{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto auto; 
+}
+
+.nuestrosServicios p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mainServicios h1, h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #302a7d;
+}
+
+.blog, .blogIzq{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.blogIzq{
+    flex-direction: row-reverse;
+}
+.blog div,
+.blogIzq div{
+    width: 35%;
+    margin: auto;
+    text-align:start;
+}
+
+.blog h2{
+    text-align:left;
+}
+
+.blogIzq h2{
+    text-align:right;
+}
+
+.blog p{
+    text-align:justify;
+}
+
+.blogIzq p{
+    text-align:justify;
+}
+
+.imgServicios{
+    width: 600px;
+    height: 430px;
+    margin: 40px;
+}
+
+
+/*aca empieza clientes*/
+
+.bodyClientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.bannerClientes img{
+    width: 100%;
+}
+
+.nuestrosClientes{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto auto; 
+}
+
+.mainClientes h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #302a7d;
+}
+
+.logosClientes{
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "imgCli001 imgCli002 imgCli003" 
+                        "imgCli004 imgCli005 imgCli006" 
+                        "imgCli007 imgCli008 imgCli009" 
+                        "imgCli010 imgCli011 imgCli012"
+                        "imgCli013 imgCli013 imgCli013";
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logosClientes img{
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+}
+
+.imgCli001{ 
+    grid-area: imgCli001;
+}
+.imgCli002{ 
+    grid-area: imgCli002; 
+}
+.imgCli003{ 
+    grid-area: imgCli003; 
+}
+.imgCli004{ 
+    grid-area: imgCli004; 
+}
+.imgCli005{ 
+    grid-area: imgCli005; 
+}
+.imgCli006{ 
+    grid-area: imgCli006; 
+}
+.imgCli007{ 
+    grid-area: imgCli007; 
+}
+.imgCli008{ 
+    grid-area: imgCli008; 
+}
+.imgCli009{ 
+    grid-area: imgCli009; 
+}
+.imgCli010{ 
+    grid-area: imgCli010; 
+}
+.imgCli011{ 
+    grid-area: imgCli011; 
+}
+.imgCli012{ 
+    grid-area: imgCli012; 
+}
+.imgCli013{ 
+    grid-area: imgCli013; 
+}
+
+.logosClientes figure{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.logosClientes figure:hover::before{
+    transform: scale(1) rotate(360deg);
+}
+
+.imgFigCli001::before{
+    content:"CONUAR";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli002::before{
+    content:"GARMET URUGUAY";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli003::before{
+    content:"GOYAIKE";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli004::before{
+    content:"MUNCHIS";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli005::before{
+    content:"GENTOS ARGENTINA";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli006::before{
+    content:"GRUPO LA GLORIOSA";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli007::before{
+    content:"HIDROIL";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli008::before{
+    content:"CASINOS MAC GROUP";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli009::before{
+    content:"SANATORIO MATER DEI";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli010::before{
+    content:"OSDEPYM";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli011::before{
+    content:"OSTVLA";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli012::before{
+    content:"GRUPO PEREZ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli013::before{
+    content:"ROAGRO";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+/*aca empieza contacto*/
+
+.bodyContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.bannerContacto img{
+    width: 100%;
+}
+
+.contacto{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 25px auto; 
+}
+
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.mainContacto h1, h2{
+    text-align: center;
+    font-size: 25px;
+    color: #302a7d;
+}
+
+.masInformacionH3{
+    padding: 0px;
+    margin-top: 25px;
+}
+
+.masInformacion h3{
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    padding: 0;
+}
+
+.masInformacion iframe{
+    margin-top: 25px;
+}
+
+.masInformacionH2{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.masInformacion{
+    border: #302a7d solid 2px;
+    padding: 30px;
+    margin: auto;
+}
+
+.formulariosContacto{
+    border: #302a7d solid 2px;
+    padding: 30px;
+    margin: auto;
+}
+
+.formularioContacto label{
+    text-align: left;
+}
+
+
+
+/*aca empieza media*/
+@media (min-width: 1px) and (max-width: 767px) {
+    .encabezado{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navPrincipal{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        font-size: 10px;
+    }
+    
+    .logoEncabezado{
+        margin: auto auto;
+    }
+    
+    .divIndex001{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .pDivIndex001{
+        width: 90%;
+    }    
+
+    .imagenPrincipal img{
+        margin: auto auto;
+        width: 90%;
+        border-radius: 5px 5px;
+    }
+
+    .videoIndex{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .videoIndex iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+    }
+    
+    .divFooter{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        align-items: center;
+    }
+    
+    .divFooter h4,h5{
+        margin: 0px;
+    }
+
+    .footerLogo{
+        width: 30px;
+        justify-content: center;
+    }
+
+    .empleado{
+        width: 50%;
+    }
+    .blog, .blogIzq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .blogIzq{
+        flex-direction:column;
+    }
+    .blog div,
+    .blogIzq div{
+        width: 100%;
+        margin: auto;
+        text-align:start;
+    }
+
+    .blog h2{
+        text-align:justify;
+    }
+
+    .blogIzq h2{
+        text-align:justify;
+    }
+
+    .nuestrosServicios{
+        margin-bottom: 15px;
+    }
+
+    .logosClientes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13*1fr);
+        grid-template-areas: "imgCli001"
+                            "imgCli002"
+                            "imgCli003"
+                            "imgCli004" 
+                            "imgCli005"
+                            "imgCli006" 
+                            "imgCli007"
+                            "imgCli008"
+                            "imgCli009"
+                            "imgCli010" 
+                            "imgCli011"
+                            "imgCli012"
+                            "imgCli013";
+    }    
+    .logosClientes img{
+        width: 90%;
+        height: 150px;
+    }
+    .contacto{
+        flex-direction: column;
+    }
+    .masInformacion{
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .encabezado{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navPrincipal{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .logoEncabezado{
+        margin: auto auto;
+    }
+
+    .videoIndex{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .videoIndex iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+    }
+    
+    .divFooter{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        align-items: center;
+    }
+    
+    .divFooter h4,h5{
+        margin: 0px;
+    }
+
+    .footerLogo{
+        width: 30px;
+        justify-content: center;
+    }
+
+    .empleado{
+        width: 30%;
+    }
+    
+    .blog, .blogIzq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .blogIzq{
+        flex-direction:column;
+    }
+    .blog div,
+    .blogIzq div{
+        width: 100%;
+        margin: auto;
+        text-align:start;
+    }
+
+    .blog h2{
+        text-align:justify;
+    }
+
+    .blogIzq h2{
+        text-align:justify;
+    }
+
+    .nuestrosServicios{
+        margin-bottom: 15px;
+    }
+
+    .logosClientes{
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+        grid-template-areas: "imgCli001 imgCli002"
+                            "imgCli003 imgCli004" 
+                            "imgCli005 imgCli006" 
+                            "imgCli007 imgCli008"
+                            "imgCli009 imgCli010" 
+                            "imgCli011 imgCli012"
+                            "imgCli013 imgCli013";
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body class="bodyContacto">
+    <header class="encabezado">
+        <a class="navLogo" href="../index.html">
+            <img class="logoEncabezado" src="../images/logo_empresa.png" alt="Logo de la marca">
+        </a>
+        <nav class="navPrincipal">  
+            <ul class="menuEncabezado">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>                
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="clientes.html">Clientes</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainContacto">
+        <div class="bannerContacto">
+            <img src="../images/banner_contacto_001.png" alt="imagen banner contacto">
+        </div>
+        <div class="contacto">
+            <section class="formulariosContacto">
+                <h1>
+                    Realizar una consulta
+                </h1>
+                <section>
+                    <form class="formularioContacto" action="#">
+                        <label for="email">Ingrese su nombre:
+                            <input type="text" placeholder="nombre + apellido">
+                        </label>
+                        <label for="email">Ingrese su numero de telefono:
+                            <input type="text" placeholder="Número de telefono:">
+                        </label>
+                        <label for="email">Ingrese su email:
+                            <input type="email" placeholder="aaa@gmail.com" name="email">
+                        </label>
+                        <label for="consulta">Ingrese su consulta:
+                            <textarea placeholder="consulta"></textarea>
+                        </label><br>
+                        <div>
+                            <p>Es cliente?</p>
+                            <div>SI
+                                <input type="radio" name="cliente" value="SI">
+                            </div>
+                            <div>NO
+                                <input type="radio" name="cliente" value="NO">
+                            </div>
+                        </div>
+                        <p>Como nos conocio?</p>
+                        <select name="letra" id="letra"> 
+                            <option value="a">Internet</option>
+                            <option value="b">Televison</option>
+                            <option value="c">Otros</option>
+                        </select>
+                        <div>Queres recibir info sobre nosotros?
+                            <input type="checkbox" name="acepta" value="1">
+                        </div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </form>
+                </section>
+            </section>
+
+            <section class="masInformacion">
+                <h2 class="masInformacionH2">Mas informacion</h2>
+                <h3 class="masInformacionH3">E-Mail</h3>
+                <p>pablo.cavs.86@gmail.com</p>
+                <h3 class="masInformacionH3">Telefono</h3>
+                <p>11-30041709</p>
+                <h3 class="masInformacionH3">Ubicación</h3>
+                <p>Lavalle 333 - CABA – Argentina</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d928.2481753180007!2d-58.372606354386214!3d-34.60157408794825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335332b300a5f%3A0x9848671174cefe16!2sLavalle%20333%2C%20C1047%20CABA!5e0!3m2!1ses!2sar!4v1650065694367!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a class="footerLogo" href="../index.html">
+            <img class="logoEncabezado" src="../images/logo_empresa.png" alt="Logo de la marca">
+        </a>       
+        <div class="divFooter">
+            <h4 class="footer4">Ubicación: Lavalle 333 - CABA – Argentina</h4>
+            <h4 class="footer4">Telefono: 11-3004-1709</h4>
+            <h4 class="footer4">E-mail: info@proyectoweb.com.ar</h4>
+            <h4 class="footer4">Copyright © 2022 Pablo Peralta</h4>
+        </div>
+    </footer>           
+</body>
+
+</html>
