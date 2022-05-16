@@ -18,9 +18,7 @@
 
 .encabezado{
     grid-area: encabezado;
-    /*background-color:#17678e;*/
-    background: rgb(0,113,255);
-    background: linear-gradient(90deg, rgba(0,113,255,1) 8%, rgba(3,12,95,0.9895308465182948) 100%);
+    background-color:#17678e !important;
     height: 60px;
     position:fixed;
     width: 100%;
@@ -29,47 +27,11 @@
     z-index: 100;
 }
 
-.navPrincipal{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.logoEncabezado{
-    display: flex;
-    top: 0;
-    width: 60px;
-    margin: 0px 25px;
-}
-
-.menuEncabezado{
-    list-style: none;
-    display: flex;
-}
-
-nav ul li{
-    padding-left: 5px;
-    margin: 0px 15px;
-    width: max-content;
-}
-
-nav ul li a:hover {
-    color: rgb(184, 184, 187);
-    transition: 0.6s;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 0px 5px;
-}
-
 .bannerIndex{
     width: 100%;
     height: 350px;
     background-size: 100% 100%;
-    animation: banner 10s infinite;
+    animation: banner 9s infinite;
 }
 
 @keyframes banner{
@@ -151,6 +113,11 @@ main{
     text-align: center;    
 }
 
+.oficinas{
+    display: flexbox;
+    justify-content: center;
+}
+
 .seccionVideo{
     text-align:center;
     padding-top: 40px;
@@ -163,16 +130,15 @@ main{
     padding-bottom: 10px;
 }
 
+
 footer{
     display: flex;
-    justify-content: space-around;
-    background-color:#17678e;
     width: 100%;
     height: 50px;
     grid-area: footer;
-    color: white;
 }
 
+/*
 .divFooter{
     display: flex;
     justify-content:space-around;
@@ -189,7 +155,7 @@ footer{
     display: flex;
     width: 50px;
 }
-
+*/
 .divPrioridades{
     margin-top: 15px;
 }
@@ -698,6 +664,12 @@ main{
     padding: 0;
 }
 
+#h3Index, #h2nosotros, #h1Contacto, #h2Contacto{
+    text-align: center;
+    font-size: 25px;
+    color: #302a7d;
+}
+
 .masInformacion iframe{
     margin-top: 25px;
 }
@@ -729,22 +701,6 @@ main{
 @media (min-width: 1px) and (max-width: 767px) {
     .encabezado{
         height: auto;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .navPrincipal{
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a{
-        font-size: 10px;
-    }
-    
-    .logoEncabezado{
-        margin: auto auto;
     }
     
     .divIndex001{
@@ -778,27 +734,7 @@ main{
     }
 
     footer{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 130px;
-    }
-    
-    .divFooter{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 10px;
-        align-items: center;
-    }
-    
-    .divFooter h4,h5{
-        margin: 0px;
-    }
-
-    .footerLogo{
-        width: 30px;
-        justify-content: center;
+        height: auto;
     }
 
     .empleado{
@@ -864,18 +800,6 @@ main{
 @media (min-width: 768px) and (max-width: 1023px) {
     .encabezado{
         height: auto;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .navPrincipal{
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    
-    .logoEncabezado{
-        margin: auto auto;
     }
 
     .videoIndex{
@@ -894,42 +818,24 @@ main{
     }
 
     footer{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 130px;
-    }
-    
-    .divFooter{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 10px;
-        align-items: center;
-    }
-    
-    .divFooter h4,h5{
-        margin: 0px;
-    }
-
-    .footerLogo{
-        width: 30px;
-        justify-content: center;
+        height: auto;
     }
 
     .empleado{
         width: 30%;
     }
-    
+
     .blog, .blogIzq{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .blogIzq{
         flex-direction:column;
     }
+
     .blog div,
     .blogIzq div{
         width: 100%;
@@ -964,4 +870,66 @@ main{
     .contacto{
         flex-direction: column;
     }
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.colorBlanco {
+    color: rgb(255, 255, 255);
+    background-color: #17678e;
+    margin: 0;
+    opacity: 75%;
+}
+
+.sectionCarousel{
+    margin: auto;
 }
