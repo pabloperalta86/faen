@@ -1,0 +1,71 @@
+.bodyServicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.bannerServicios img{
+    width: 100%;
+}
+
+.nuestrosServicios{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto auto; 
+    p{
+        text-align: center;
+        margin-top: 20px;
+    }    
+}
+
+.mainServicios{
+    h1, h2{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 25px;
+        color: #302a7d;
+    }
+}
+
+.blog, .blogIzq{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.blogIzq{
+    flex-direction: row-reverse;
+}
+
+.blog div, .blogIzq div{
+    width: 35%;
+    margin: auto;
+    text-align:start;
+}
+
+.blog h2{
+    text-align:left;
+}
+
+.blogIzq h2{
+    text-align:right;
+}
+
+.blog p{
+    text-align:justify;
+}
+
+.blogIzq p{
+    text-align:justify;
+}
+
+.imgServicios{
+    width: 600px;
+    height: 430px;
+    margin: 40px;
+}

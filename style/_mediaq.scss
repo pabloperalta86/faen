@@ -1,0 +1,162 @@
+@media (min-width: 1px) and (max-width: 767px) {
+    .encabezado{
+        height: auto;
+    }
+    
+    .divIndex001{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .pDivIndex001{
+        width: 90%;
+    }    
+
+    .imagenPrincipal img{
+        margin: auto auto;
+        width: 90%;
+        border-radius: 5px 5px;
+    }
+
+    .videoIndex{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .videoIndex iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .empleado{
+        width: 50%;
+    }
+    .blog, .blogIzq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .blogIzq{
+        flex-direction:column;
+    }
+    .blog div,
+    .blogIzq div{
+        width: 100%;
+        margin: auto;
+        text-align:start;
+    }
+
+    .blog h2{
+        text-align:justify;
+    }
+
+    .blogIzq h2{
+        text-align:justify;
+    }
+
+    .nuestrosServicios{
+        margin-bottom: 15px;
+    }
+
+    .logosClientes{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+        grid-template-areas: "imgCli001" "imgCli002" "imgCli003" "imgCli004" "imgCli005" "imgCli006" "imgCli007" "imgCli008" "imgCli009" "imgCli010" "imgCli011" "imgCli012" "imgCli013";
+    }    
+
+    .logosClientes img{
+        width: 90%;
+        height: 150px;
+    }
+    .contacto{
+        flex-direction: column;
+    }
+    .masInformacion{
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .encabezado{
+        height: auto;
+    }
+
+    .videoIndex{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .videoIndex iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .empleado{
+        width: 30%;
+    }
+
+    .blog, .blogIzq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .blogIzq{
+        flex-direction:column;
+    }
+
+    .blog div,
+    .blogIzq div{
+        width: 100%;
+        margin: auto;
+        text-align:start;
+    }
+
+    .blog h2{
+        text-align:justify;
+    }
+
+    .blogIzq h2{
+        text-align:justify;
+    }
+
+    .nuestrosServicios{
+        margin-bottom: 15px;
+    }
+
+    .logosClientes{
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+        grid-template-areas: "imgCli001 imgCli002" "imgCli003 imgCli004" "imgCli005 imgCli006" "imgCli007 imgCli008" "imgCli009 imgCli010" "imgCli011 imgCli012" "imgCli013 imgCli013";
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+}

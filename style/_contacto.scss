@@ -1,0 +1,76 @@
+.bodyContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.bannerContacto img{
+    width: 100%;
+}
+
+.contacto{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 25px auto; 
+}
+
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.mainContacto h1, h2{
+    text-align: center;
+    font-size: 25px;
+    color: #302a7d;
+}
+
+.masInformacionH3{
+    padding: 0px;
+    margin-top: 25px;
+}
+
+.masInformacion h3{
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    padding: 0;
+}
+
+#h3Index, #h2nosotros, #h1Contacto, #h2Contacto{
+    text-align: center;
+    font-size: 25px;
+    color: #302a7d;
+}
+
+.masInformacion iframe{
+    margin-top: 25px;
+}
+
+.masInformacionH2{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.masInformacion{
+    border: #302a7d solid 2px;
+    padding: 30px;
+    margin: auto;
+}
+
+.formulariosContacto{
+    border: #302a7d solid 2px;
+    padding: 30px;
+    margin: auto;
+}
+
+.formularioContacto label{
+    text-align: left;
+}

@@ -1,0 +1,304 @@
+.bodyClientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.bannerClientes img{
+    width: 100%;
+}
+
+.nuestrosClientes{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto auto; 
+}
+
+.mainClientes h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #302a7d;
+}
+
+.logosClientes img{
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+}
+
+.imgCli001{ 
+    grid-area: imgCli001;
+}
+.imgCli002{ 
+    grid-area: imgCli002; 
+}
+.imgCli003{ 
+    grid-area: imgCli003; 
+}
+.imgCli004{ 
+    grid-area: imgCli004; 
+}
+.imgCli005{ 
+    grid-area: imgCli005; 
+}
+.imgCli006{ 
+    grid-area: imgCli006; 
+}
+.imgCli007{ 
+    grid-area: imgCli007; 
+}
+.imgCli008{ 
+    grid-area: imgCli008; 
+}
+.imgCli009{ 
+    grid-area: imgCli009; 
+}
+.imgCli010{ 
+    grid-area: imgCli010; 
+}
+.imgCli011{ 
+    grid-area: imgCli011; 
+}
+.imgCli012{ 
+    grid-area: imgCli012;
+}
+.imgCli013{ 
+    grid-area: imgCli013;
+}
+
+.logosClientes{
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "imgCli001 imgCli002 imgCli003" "imgCli004 imgCli005 imgCli006" "imgCli007 imgCli008 imgCli009" "imgCli010 imgCli011 imgCli012" "imgCli013 imgCli013 imgCli013";
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logosClientes{
+    figure{
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    }
+}
+
+.logosClientes figure:hover::before{
+    transform: scale(1) rotate(360deg);
+}
+
+.imgFigCli001::before{
+    content:"CONUAR";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli002::before{
+    content:"GARMET URUGUAY";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli003::before{
+    content:"GOYAIKE";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli004::before{
+    content:"MUNCHIS";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli005::before{
+    content:"GENTOS ARGENTINA";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli006::before{
+    content:"GRUPO LA GLORIOSA";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli007::before{
+    content:"HIDROIL";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli008::before{
+    content:"CASINOS MAC GROUP";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli009::before{
+    content:"SANATORIO MATER DEI";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli010::before{
+    content:"OSDEPYM";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli011::before{
+    content:"OSTVLA";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli012::before{
+    content:"GRUPO PEREZ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.imgFigCli013::before{
+    content:"ROAGRO";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}

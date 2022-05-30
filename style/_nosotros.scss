@@ -1,0 +1,75 @@
+.bannerNosotros{
+    img{
+        width: 100%;
+    }
+}
+
+.bodyNosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                        "main main main" 
+                        "footer footer footer";
+}
+
+.oficinas{
+    display: flexbox;
+    justify-content: center;
+}
+
+.empleados{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.empleado{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 16px 32px;
+    margin: 16px;
+    background-color: #E1E1E1;
+    border-radius: 15px;
+}
+
+.empleado{
+    h3{
+        text-align: center;
+        margin-bottom: 5px;
+        color: rgb(92, 89, 89);
+    }
+    h4{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(144, 144, 144);
+    text-decoration: none;
+    font-size: 20px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin: auto auto; 
+    p{
+        text-align: center;
+        margin-top: 20px;
+    }    
+}
+
+.mainNosotros{ 
+    h1, h2{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 25px;
+        color: #302a7d;
+    }
+}
