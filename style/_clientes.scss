@@ -26,50 +26,33 @@
     color: #302a7d;
 }
 
+@mixin anchoalto ($width, $height){
+    width: $width;
+    height: $height;
+}
+
 .logosClientes img{
-    width: 300px;
-    height: 150px;
+    @include anchoalto(300px, 150px);
     margin: 10px;
 }
 
-.imgCli001{ 
-    grid-area: imgCli001;
-}
-.imgCli002{ 
-    grid-area: imgCli002; 
-}
-.imgCli003{ 
-    grid-area: imgCli003; 
-}
-.imgCli004{ 
-    grid-area: imgCli004; 
-}
-.imgCli005{ 
-    grid-area: imgCli005; 
-}
-.imgCli006{ 
-    grid-area: imgCli006; 
-}
-.imgCli007{ 
-    grid-area: imgCli007; 
-}
-.imgCli008{ 
-    grid-area: imgCli008; 
-}
-.imgCli009{ 
-    grid-area: imgCli009; 
-}
-.imgCli010{ 
-    grid-area: imgCli010; 
-}
-.imgCli011{ 
-    grid-area: imgCli011; 
-}
-.imgCli012{ 
-    grid-area: imgCli012;
-}
-.imgCli013{ 
-    grid-area: imgCli013;
+$areascliente: ("001": "imgCli001", 
+"002": "imgCli002",
+"003": "imgCli003",
+"004": "imgCli004",
+"005": "imgCli005",
+"006": "imgCli006",
+"007": "imgCli007",
+"008": "imgCli008",
+"009": "imgCli009",
+"010": "imgCli010",
+"011": "imgCli011",
+"012": "imgCli012");
+
+@each $nombre, $valor in $areascliente {
+    .imgCli#{$nombre} {
+        grid-area: $valor;
+    }
 }
 
 .logosClientes{
@@ -112,193 +95,61 @@
 }
 
 .imgFigCli002::before{
+    @extend.imgFigCli001::before;
     content:"GARMET URUGUAY";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli003::before{
+    @extend.imgFigCli001::before;
     content:"GOYAIKE";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli004::before{
+    @extend.imgFigCli001::before;
     content:"MUNCHIS";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli005::before{
+    @extend.imgFigCli001::before;
     content:"GENTOS ARGENTINA";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli006::before{
+    @extend.imgFigCli001::before;
     content:"GRUPO LA GLORIOSA";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli007::before{
+    @extend.imgFigCli001::before;
     content:"HIDROIL";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli008::before{
+    @extend.imgFigCli001::before;
     content:"CASINOS MAC GROUP";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli009::before{
+    @extend.imgFigCli001::before;
     content:"SANATORIO MATER DEI";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli010::before{
+    @extend.imgFigCli001::before;
     content:"OSDEPYM";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli011::before{
+    @extend.imgFigCli001::before;
     content:"OSTVLA";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli012::before{
+    @extend.imgFigCli001::before;
     content:"GRUPO PEREZ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }
 
 .imgFigCli013::before{
+    @extend.imgFigCli001::before;
     content:"ROAGRO";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s;
 }

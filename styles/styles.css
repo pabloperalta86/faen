@@ -14,9 +14,7 @@
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
-      grid-template-areas: "encabezado encabezado encabezado" 
- "main main main" 
- "footer footer footer";
+      grid-template-areas: "encabezado encabezado encabezado"  "main main main"  "footer footer footer";
 }
 
 .encabezado {
@@ -47,42 +45,42 @@
 
 @-webkit-keyframes banner {
   0%, 30% {
-    background-image: url(../images/banner_index_001.png);
+    background-image: url(../images/banner_index_001.jpg);
     opacity: 1;
   }
   31%, 35% {
     opacity: 0.75;
   }
   35%, 65% {
-    background-image: url(../images/banner_index_002.png);
+    background-image: url(../images/banner_index_002.jpg);
     opacity: 1;
   }
   66%, 70% {
     opacity: 0.75;
   }
   71%, 100% {
-    background-image: url(../images/banner_index_003.png);
+    background-image: url(../images/banner_index_003.jpg);
     opacity: 1;
   }
 }
 
 @keyframes banner {
   0%, 30% {
-    background-image: url(../images/banner_index_001.png);
+    background-image: url(../images/banner_index_001.jpg);
     opacity: 1;
   }
   31%, 35% {
     opacity: 0.75;
   }
   35%, 65% {
-    background-image: url(../images/banner_index_002.png);
+    background-image: url(../images/banner_index_002.jpg);
     opacity: 1;
   }
   66%, 70% {
     opacity: 0.75;
   }
   71%, 100% {
-    background-image: url(../images/banner_index_003.png);
+    background-image: url(../images/banner_index_003.jpg);
     opacity: 1;
   }
 }
@@ -269,9 +267,7 @@ main {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
-      grid-template-areas: "encabezado encabezado encabezado" 
- "main main main" 
- "footer footer footer";
+      grid-template-areas: "encabezado encabezado encabezado"  "main main main"  "footer footer footer";
 }
 
 .oficinas {
@@ -360,9 +356,7 @@ main {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
-      grid-template-areas: "encabezado encabezado encabezado" 
- "main main main" 
- "footer footer footer";
+      grid-template-areas: "encabezado encabezado encabezado"  "main main main"  "footer footer footer";
 }
 
 .bannerServicios img {
@@ -448,9 +442,7 @@ main {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
-      grid-template-areas: "encabezado encabezado encabezado" 
- "main main main" 
- "footer footer footer";
+      grid-template-areas: "encabezado encabezado encabezado"  "main main main"  "footer footer footer";
 }
 
 .bannerClientes img {
@@ -486,82 +478,51 @@ main {
 }
 
 .imgCli001 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: imgCli001;
+  grid-area: "imgCli001";
 }
 
 .imgCli002 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: imgCli002;
+  grid-area: "imgCli002";
 }
 
 .imgCli003 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: imgCli003;
+  grid-area: "imgCli003";
 }
 
 .imgCli004 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: imgCli004;
+  grid-area: "imgCli004";
 }
 
 .imgCli005 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: imgCli005;
+  grid-area: "imgCli005";
 }
 
 .imgCli006 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: imgCli006;
+  grid-area: "imgCli006";
 }
 
 .imgCli007 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: imgCli007;
+  grid-area: "imgCli007";
 }
 
 .imgCli008 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: imgCli008;
+  grid-area: "imgCli008";
 }
 
 .imgCli009 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: imgCli009;
+  grid-area: "imgCli009";
 }
 
 .imgCli010 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: imgCli010;
+  grid-area: "imgCli010";
 }
 
 .imgCli011 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: imgCli011;
+  grid-area: "imgCli011";
 }
 
 .imgCli012 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  grid-area: imgCli012;
-}
-
-.imgCli013 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: imgCli013;
+  grid-area: "imgCli012";
 }
 
 .logosClientes {
@@ -593,7 +554,7 @@ main {
           transform: scale(1) rotate(360deg);
 }
 
-.imgFigCli001::before {
+.imgFigCli001::before, .imgFigCli002::before, .imgFigCli003::before, .imgFigCli004::before, .imgFigCli005::before, .imgFigCli006::before, .imgFigCli007::before, .imgFigCli008::before, .imgFigCli009::before, .imgFigCli010::before, .imgFigCli011::before, .imgFigCli012::before, .imgFigCli013::before {
   content: "CONUAR";
   position: absolute;
   top: 0;
@@ -621,314 +582,50 @@ main {
 
 .imgFigCli002::before {
   content: "GARMET URUGUAY";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli003::before {
   content: "GOYAIKE";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli004::before {
   content: "MUNCHIS";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli005::before {
   content: "GENTOS ARGENTINA";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli006::before {
   content: "GRUPO LA GLORIOSA";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli007::before {
   content: "HIDROIL";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli008::before {
   content: "CASINOS MAC GROUP";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli009::before {
   content: "SANATORIO MATER DEI";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli010::before {
   content: "OSDEPYM";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli011::before {
   content: "OSTVLA";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli012::before {
   content: "GRUPO PEREZ";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .imgFigCli013::before {
   content: "ROAGRO";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #5b40f3a6;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .bodyContacto {
@@ -938,9 +635,7 @@ main {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
-      grid-template-areas: "encabezado encabezado encabezado" 
- "main main main" 
- "footer footer footer";
+      grid-template-areas: "encabezado encabezado encabezado"  "main main main"  "footer footer footer";
 }
 
 .bannerContacto img {
@@ -1082,8 +777,7 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blog div,
-  .blogIzq div {
+  .blog div, .blogIzq div {
     width: 100%;
     margin: auto;
     text-align: start;
@@ -1161,8 +855,7 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blog div,
-  .blogIzq div {
+  .blog div, .blogIzq div {
     width: 100%;
     margin: auto;
     text-align: start;

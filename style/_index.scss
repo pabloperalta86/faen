@@ -36,21 +36,21 @@ $colorH: #302a7d;
 
 @keyframes banner{
     0%,30%{
-        background-image: url(../images/banner_index_001.png);
+        background-image: url(../images/banner_index_001.jpg);
         opacity: 1;
     }
     31%,35%{
         opacity: 0.75;
     }
     35%,65%{
-        background-image: url(../images/banner_index_002.png);
+        background-image: url(../images/banner_index_002.jpg);
         opacity: 1;
     }
     66%,70%{
         opacity: 0.75;
     }
     71%,100%{
-        background-image: url(../images/banner_index_003.png);
+        background-image: url(../images/banner_index_003.jpg);
         opacity: 1;
     }    
 }
