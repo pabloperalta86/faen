@@ -35,6 +35,10 @@
   z-index: 100;
 }
 
+.contenedor {
+  width: 65px;
+}
+
 .bannerIndex {
   width: 100%;
   height: 350px;
@@ -347,6 +351,10 @@ main {
   margin-top: 30px;
   font-size: 25px;
   color: #302a7d;
+}
+
+.w-width {
+  width: 60%;
 }
 
 .bodyServicios {
@@ -811,6 +819,9 @@ main {
   .masInformacion {
     padding: 5px;
   }
+  .w-width {
+    width: 85%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -881,6 +892,9 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .w-width {
+    width: 75%;
   }
 }
 
