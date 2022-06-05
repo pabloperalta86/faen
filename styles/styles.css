@@ -799,6 +799,11 @@ main {
   .nuestrosServicios {
     margin-bottom: 15px;
   }
+  .imgServicios {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
   .logosClientes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
