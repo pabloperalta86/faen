@@ -764,9 +764,14 @@ main {
   .pDivIndex001 {
     width: 90%;
   }
-  .imagenPrincipal img {
+  .fimagenPrincipal {
     margin: auto auto;
-    width: 90%;
+    width: 80%;
+    border-radius: 5px 5px;
+    margin-bottom: 20px;
+  }
+  .fimagenPrincipal img {
+    width: 100%;
     border-radius: 5px 5px;
   }
   .videoIndex {
