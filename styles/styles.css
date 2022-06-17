@@ -832,6 +832,7 @@ main {
     margin: auto;
   }
   .logosClientes {
+    width: 75%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
@@ -839,7 +840,7 @@ main {
         grid-template-areas: "imgCli001" "imgCli002" "imgCli003" "imgCli004" "imgCli005" "imgCli006" "imgCli007" "imgCli008" "imgCli009" "imgCli010" "imgCli011" "imgCli012" "imgCli013";
   }
   .logosClientes img {
-    width: 90%;
+    width: 95%;
     height: 150px;
   }
   .contacto {
@@ -853,6 +854,18 @@ main {
   }
   .w-width {
     width: 85%;
+  }
+  .bannerContacto img {
+    height: 110px;
+  }
+  .bannerNosotros img {
+    height: 110px;
+  }
+  .bannerServicios img {
+    height: 110px;
+  }
+  .bannerClientes img {
+    height: 110px;
   }
 }
 
