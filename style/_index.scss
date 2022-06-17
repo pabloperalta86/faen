@@ -1,4 +1,4 @@
-$colorH: #302a7d;
+$colorH: #17678e;
 
 *{
     padding: 0;
@@ -33,31 +33,10 @@ $colorH: #302a7d;
 
 .bannerIndex{
     width: 100%;
-    height: 350px;
+    height: 300px !important;
     background-size: 100% 100%;
-    animation: banner 9s infinite;
 }
 
-@keyframes banner{
-    0%,30%{
-        background-image: url(../images/banner_index_001.jpg);
-        opacity: 1;
-    }
-    31%,35%{
-        opacity: 0.75;
-    }
-    35%,65%{
-        background-image: url(../images/banner_index_002.jpg);
-        opacity: 1;
-    }
-    66%,70%{
-        opacity: 0.75;
-    }
-    71%,100%{
-        background-image: url(../images/banner_index_003.jpg);
-        opacity: 1;
-    }    
-}
 
 .divIndex001{
     display: flex;
@@ -65,22 +44,26 @@ $colorH: #302a7d;
     align-items: center;
 }
 
-.imagenPrincipal{
+.fimagenPrincipal{
+    margin: 30px;
+    border-radius: 12px;
+    overflow:hidden;
+    box-shadow: 5px 8px 12px rgb(53, 53, 53);
+    transition: transform 1s;
     img{
         display: flex;
-        margin: 30px;
-        width: 450px;
-        border-radius: 10px 10px;
+        width: 550px;
+        border-radius: 12px;
+        
     }
 } 
 
-.imagenPrincipal{
-    transition: transform 1s;
-}
-
-.imagenPrincipal{
+.fimagenPrincipal{
     &:hover{
-        transform: scale(.98); 
+        -webkit-transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
     }
 }
 
@@ -103,20 +86,30 @@ main{
 }
 
 #h1Index{
-    margin-top: 30px;
-    margin-bottom: 20px;
     font-size: 25px;
     text-align: center;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.colorAzul{
     color: $colorH;
+}
+
+.negrita{
+    font-weight: bold;
 }
 
 .seccionPrincipal{
     h2,h3{
         font-size: 25px;
-        text-decoration: underline;
-        padding-bottom: 10px;
         color: $colorH;
         text-align: center;
+    }
+    h2{
+        margin-top: 15px;
     }
 }
 
@@ -125,7 +118,6 @@ main{
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 25px;
-    text-decoration: underline;
     h3{
         padding-bottom: 10px;
     }
@@ -139,7 +131,31 @@ footer{
 }
 
 .divPrioridades{
-    margin-top: 15px;
+    opacity: 90%;
+    width: 200px;
+    padding: 2px;
+    margin: auto;
+    height: 200px;
+    border-width: 4px;
+    box-shadow: 5px 8px 12px rgb(53, 53, 53);
+}
+
+.divServiciosOfrecidos{
+    opacity: 90%;
+    width: 220px;
+    padding: 20px;
+    margin: auto;
+    height: 300px;
+    border-width: 4px;
+    box-shadow: 5px 8px 12px rgb(53, 53, 53);
+}
+
+.card-body{
+    background-color: rgb(213, 212, 210);
+}
+
+.ppp{
+    background-color: rgb(213, 212, 210);
 }
 
 main{
@@ -190,10 +206,24 @@ main{
     opacity: 75%;
 }
 
+.colorBlanco2 {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    font-size: 26px;
+}
+
+.divBanner{
+    top: 15px;
+}
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+}
+
+.sombra {
+    box-shadow: 5px 8px 12px rgb(53, 53, 53);
 }
