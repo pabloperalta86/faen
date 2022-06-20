@@ -58,6 +58,12 @@ $colorH: #17678e;
     }
 } 
 
+.nav-link{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
 .fimagenPrincipal{
     &:hover{
         -webkit-transform: rotateY(180deg);
